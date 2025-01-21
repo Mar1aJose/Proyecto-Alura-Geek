@@ -1,0 +1,275 @@
+/*==============================Encabezado======================================= */
+.encabezado__container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 6.5rem;
+    width: 100%;
+}
+
+/* tamaño del logo en el encabezado */
+.encabezado__logo{
+    width: auto;
+    height: 3.5rem;
+}
+
+
+
+/*==============================contenido principal======================================= */
+
+/* contenedor de productos y formulario */
+
+/* div para copiar url */
+.area__url{
+    margin: 2rem 10px;
+    font-size: .8rem;
+    padding:2% 2% 2%;
+}
+.main__container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+    margin-bottom: 6.875rem;
+    margin-top: 7rem;
+    justify-content: space-around;
+    height: auto;
+}   
+
+
+
+/*==============================seccion de productos======================================= */
+
+img{
+    width:97%;
+}
+/* contenedor padre de seccion de productos */
+.productos__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-left: 1rem;
+    height: auto;
+    width: 47rem;
+    
+}
+
+/* contenedor de lista de productos */
+.productos__lista{
+    padding-top: 5%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: .5rem;
+    width: 100%;
+    
+}
+
+/* contenedor individual de productos */
+.productos__item{
+    width: 30%;
+    padding-left: .86%;
+    padding-top: .86%;
+    margin-bottom:10%;
+    height: 270px;
+    position: relative;
+}
+
+/* descripcion de los productos */
+.detalles__productos{
+    width:95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: .3rem;
+    gap: 70%;
+    position: absolute;
+    bottom:0px;
+}
+
+/* nombre de cada producto */
+.nombre__producto{
+    font-size: 1rem;
+    padding-left: 5%;
+}
+
+
+
+/*==============================Area del formulario======================================= */
+/* contenedor de formulario */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    margin-right: 1rem;
+    height: 32.3125rem;
+    width: 38%;
+}
+
+/* contenedor de inputs */
+.input__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    
+    
+}
+
+/* elementos input */
+.input {
+    width: 100%;
+    height: 3.8rem;
+}
+
+/* contenedor de botones */
+.botones__container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 3.9rem;
+}
+
+.boton{
+    width: 49%;
+    height: 95%;
+
+
+}
+
+
+
+/*==============================Area del footer======================================= */
+
+/* contenedor del  footer */
+.footer__container{
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+    position: absolute;
+    width: 100%;
+}
+
+/* contenido dentro del footer */
+.contenido__footer--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .contenido__footer--container{
+    font-size: 2vw;
+    }
+}
+
+/* ==================================Version movil============================================== */
+
+/* version de pantallas medianas */
+@media (max-width: 479px){
+    .encabezado__container{
+        height: 6rem;
+        width: 100%;
+    }
+
+    /* contenedor de contenido principal */
+    .main__container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* contenedor del formulario */
+    .formulario{
+        width: auto;
+        height: auto;
+        margin-left: 8%;
+    }
+
+    .input__container{
+        gap: 1rem;
+        padding-top: 10%;
+    }
+
+    .input{
+        height: 3.125rem;
+    }
+
+    .boton{
+        height: 3rem;
+    }
+
+    /* seccion de productos */
+    .productos__container{
+        width: auto;
+        height: auto;
+        gap:5%;
+        margin-top: 22%;
+    }
+
+/* lista general de productos */
+    .productos__lista{
+        gap: 2%;
+    }
+    
+    /* productos individuales */
+    .productos__item{
+        width: 48%;
+    }
+
+}
+
+/* version de pantallas moviles mas pequeñas */
+@media (min-width: 270px) and (max-width: 479px){
+    /* logo del footer */
+    .encabezado__logo{
+        width: 88%;
+    }
+
+    /* subtitulo de cada seccion */
+    h2{
+        text-align: center;
+    }
+
+/* contenedor de detalles de productos */
+.productos__item{
+    height: 180px;
+}
+
+.detalles__productos{
+        font-size:.9rem;
+        gap: 60%;
+        width: 87%;
+        margin-left: 5%;
+}
+
+.footer__container{
+    font-size: 3.5vw;
+
+}
+}
+
+/* Cambio de color morado a azul claro */
+:root {
+    --main-color: #87CEEB; /* Color azul claro */
+}
+
+.encabezado__container {
+    background-color: var(--main-color);
+}
+
+.productos__container {
+    border: 2px solid var(--main-color);
+}
+
+.detalles__productos {
+    color: var(--main-color);
+}
+
+.boton {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.footer__container {
+    background-color: var(--main-color);
+    color: white;
+}

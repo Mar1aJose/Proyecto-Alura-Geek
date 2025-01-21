@@ -1,0 +1,199 @@
+/*==============================Encabezado======================================= */
+.encabezado__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.5rem;
+    width: 100%;
+    background-color: var(--color-principal);
+    color: white;
+    font-family: var(--fuente-principal);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Suavizar bordes */
+    border-radius: 0 0 1rem 1rem; /* Bordes redondeados inferiores */
+}
+
+/* tamaño del logo en el encabezado */
+.encabezado__logo {
+    width: auto;
+    height: 3.5rem;
+}
+
+/*==============================Contenido principal======================================= */
+
+/* contenedor de productos y formulario */
+.area__url {
+    margin: 2rem 10px;
+    font-size: 0.8rem;
+    padding: 1.5rem;
+    border: solid 2px var(--color-secundatio);
+    border-radius: 1rem;
+    color: var(--color-secundatio);
+    font-family: var(--fuente-secundaria);
+    background-color: rgb(183, 229, 235);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efecto suave */
+}
+
+.main__container {
+    display: flex;
+    flex-direction: row;
+    margin: 7rem 1.8rem 6.875rem;
+    justify-content: space-around;
+    gap: 2rem;
+    height: auto;
+}
+
+/*==============================Sección de productos======================================= */
+
+img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(100, 50, 50, 0.1); /* Suavizar las imágenes */
+}
+
+/* contenedor padre de sección de productos */
+.productos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    height: auto;
+    width: 47rem;
+}
+
+/* contenedor de lista de productos */
+.productos__lista {
+    padding-top: 5%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+/* contenedor individual de productos */
+.productos__item {
+    width: 30%;
+    padding: 1rem;
+    margin-bottom: 10%;
+    height: 270px;
+    position: relative;
+    border: solid 2px var(--color-secundatio);
+    border-radius: 1rem;
+    background-color: var(--color-principal);
+    color: rgb(66, 64, 64);
+    font-family: var(--fuente-secundaria);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra amigable */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.productos__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* descripción de los productos */
+.detalles__productos {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+    gap: 1rem;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--color-principal);
+    padding: 0.5rem;
+    border-radius: 0 0 0.8rem 0.8rem;
+}
+
+/* nombre de cada producto */
+.nombre__producto {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(14, 11, 11);
+}
+
+/*==============================Área del formulario======================================= */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-right: 1rem;
+    height: auto;
+    width: 38%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: var(--fuente-secundaria);
+}
+
+.input__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+/* elementos input */
+.input {
+    width: 100%;
+    height: 3.5rem;
+    border: solid var(--color-secundatio) 3px;
+    border-radius: 1.9rem;
+    font-family: var(--fuente-secundaria);
+    font-size: 1rem;
+    color: var(--color-secundatio);
+    font-weight: bold;
+    padding-left: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s ease;
+}
+
+.input:focus {
+    border-color: #1e56c7;
+    outline: none;
+}
+
+/* botones */
+.boton {
+    width: 48%;
+    height: 3rem;
+    border: var(--color-secundatio) solid 3px;
+    border-radius: 1rem;
+    color: var(--color-secundatio);
+    font-family: var(--fuente-secundaria);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.boton__enviar {
+    cursor: pointer;
+    color: white;
+    background-color: var(--color-secundatio);
+}
+
+.boton__enviar:hover {
+    background-color: #1e56c7;
+    color: white;
+}
+
+.boton__limpiar:hover {
+    cursor: pointer;
+    background-color: #f9f9f9;
+    color: var(--color-secundatio);
+}
+
+/*==============================Footer======================================= */
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+    background-color: var(--color-principal);
+    font-family: var(--fuente-secundaria);
+    color: white;
+    border-radius: 1rem 1rem 0 0;
+}
